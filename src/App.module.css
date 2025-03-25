@@ -1,0 +1,9 @@
+.appOuterContainer {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.appInnerContainer {
+  width: 70vw;
+}
