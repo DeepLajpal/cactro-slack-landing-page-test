@@ -1,3 +1,59 @@
 .container {
   display: flex;
+  font-size: 1rem;
+  margin: 1em 2em;
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 5em 4em;
+
+    h1 {
+      font-size: 5em;
+    }
+    p {
+      font-size: 2em;
+    }
+    div {
+      display: flex;
+      button:first-of-type {
+        color: white;
+        background-color: #642067;
+        padding: 1.1em 2.5em;
+        border-radius: 0.3em;
+        border: none;
+        margin-right: 0.8em;
+      }
+
+      button:last-of-type {
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #2d85f0;
+        border-radius: 0.3em;
+        border: none;
+        padding: 0em 0.8em 0em 0em;
+
+        img {
+          margin: 0.3em;
+          padding: 1em;
+          border-radius: 0.2em;
+          background: white;
+          object-fit: contain;
+          width: 18%;
+        }
+        span {
+          flex-grow: 1;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  img {
+    /* object-fit: contain; */
+    width: 100%;
+  }
 }

@@ -9,18 +9,16 @@ const HeroSection = () => {
             <div className={styles["left"]}>
                 <h1>Slack is where the future works</h1>
                 <p>Transform the way you work with one place for everyone and everything you need to get stuff done.</p>
-                <button>TRY FOR FREE</button>
-                <div className={styles["googleButton"]}>
-                    <div>
-                        <img src={GoogleIcon} alt='GoogleIcon' />
-                    </div>
-                    <button>SIGN UP WITH GOOGLE</button>
+                <div>
+                    <button>TRY FOR FREE</button>
+                    <button>
+                        <img src={GoogleIcon} alt='Google Sign Up Icon' />
+                        <span>SIGN UP WITH GOOGLE</span>
+                    </button>
                 </div>
             </div>
 
-            <div className={styles["right"]}>
-                <img src={HeroImg} alt="" />
-            </div>
+            <img src={HeroImg} alt="" />
         </div>
     )
 }
