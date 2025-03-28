@@ -6,19 +6,27 @@
   .left {
     width: 50%;
     flex-shrink: 0;
+    display: flex;
+    align-items: center;
 
     .left-inner {
       display: flex;
       flex-direction: column;
-      justify-content: space-evenly;
-      height: 100%;
+      height: fit-content;
+      width: fit-content;
+
+      > * {
+        margin-top: 2em;
+      }
 
       /* background-color: green; */
       h1 {
         font-size: 5em;
+        margin-top: 0em;
       }
       p {
         font-size: 2em;
+        margin-top: calc(2em / 2);
       }
       div {
         display: flex;
@@ -59,7 +67,7 @@
   }
 
   img {
-    /* object-fit: contain; */
+    object-fit: contain;
     width: 50%;
   }
 }
